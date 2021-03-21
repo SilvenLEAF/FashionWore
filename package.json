@@ -4,6 +4,9 @@
   "description": "This is an E-Commerce WebApp for FashionWore that primarily deals in Clothings.",
   "main": "app.ts",
   "scripts": {
+    "start": "ts-node app.ts",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "dev": "ts-node-dev app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
